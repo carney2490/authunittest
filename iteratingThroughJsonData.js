@@ -6,8 +6,8 @@ function parseRubiconData(data){
     
     var setUpToIterate = JSON.parse(data);
 
-   setUpToIterate.data.items.forEach(function(item) {       
-            
+   setUpToIterate.data.items.forEach(function(item) {   //Notice above that it has two keys, data, and items, before it goes into the array.      
+                                                        //So you need to said up variableName.data.items.forEach(function(item){ for whatever you want to call)};
            var date = item.date;
            var randomData = item.randomdata;
            var revenue = item.revenue;
